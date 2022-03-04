@@ -1,4 +1,4 @@
-// Eventlist
+
 
 const bodyIndex = document.querySelectorAll('.index')
 const planetName = document.querySelector('#name')
@@ -35,7 +35,7 @@ function displayPlanets() {
         distanceSun.innerHTML = bodiesArray[idPlanet].distance;
         nameMoons.innerHTML = bodiesArray[idPlanet].moons;
 }
-// Function för overlay
+
 
 function on() {
     document.getElementById("planets_overlay").style.display = "block";
@@ -45,7 +45,7 @@ function off() {
     document.getElementById("planets_overlay").style.display = "none";
 }
 
-// API 
+
 
 
 async function getAPIKey() {
