@@ -12,30 +12,67 @@
     <h2>SOLARIS</h2>
     <main>
         
-        <section class="solarsystem">
+        <article onclick="on()" >
       
-            <div class="sun"></div>
+            <div id="0" class="sun index"></div>
             
-            <div class="mercury"></div>
+            <div id="1" class="mercury index"></div>
             
-            <div class="venus"></div>
+            <div id="2" class="venus index"></div>
             
-            <div class="earth"></div>
+            <div id="3" class="earth index"></div>
             
-            <div class="mars"></div>
+            <div id="4" class="mars index"></div>
             
-            <div class="jupiter"></div>
+            <div id="5" class="jupiter index"></div>
             
-            <div class="saturn"></div>
-                <div class="saturn__ring"></div>
+            <div id="6" class="saturn index"></div>
+            <div id="" class="saturn__ring"></div>
             
-            <div class="uranus"></div>
+            <div id="7" class="uranus index"></div>
   
-            <div class="neptune"></div>
-                      
-        </section>    
+            <div id="8" class="neptune index"></div>
+        </article>
 
+            <section id="planets_overlay" onclick="off()" class="overlay"> 
+                <section class="container">
+                    <section class = "col col1">
+                        <h1 class= "headline-large" id="name"></h1>
+                        <h2 class="headline-medium" id="latin-name"></h2>
+                    </section>
 
+                    <section class="col col2">
+                        <p class="text" id="desc"></p>
+                    </section>
+
+                    <section class="col col3">
+                        <section class="innerCol1">
+                            <div>
+                                <h3 class="headline-small">OMKRETS</h3>
+                                <p class="text" id="circumference"></p>
+                            </div>
+                            <div>
+                                <h3 class="headline-small">MAX TEMPERATUR</h3>
+                                <p class="text" id="temp-day"></p>
+                            </div>
+                        </section>
+                    </section>
+                    <section class="innerCol2">
+                            <div>
+                                <h3 class="headline-small">KM FRÅN SOLEN</h3>
+                                <p class="text" id="distance"></p>
+                            </div>
+                            <div>
+                                <h3 class="headline-small">MIN TEMPERATUR</h3>
+                                <p class="text" id="temp-night"></p>
+                            </div>
+                    </section>
+                    <section class="col col4">
+                        <h3 class="headline-small">MÅNAR</h3>
+                        <p class="text" id="moons"></p>      
+                    </section>
+                </section>
+            </section>
     </main>
     <script src="main.js"></script>
 </body>

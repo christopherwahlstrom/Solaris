@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Condensed:wght@300&family=Secular+One&display=swap');
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body{
-    width: 1440px;
-    height: 900px;
+    width: 100vw;
+    height: 100vh;
     background: linear-gradient(269.84deg, #0C164D 0.11%, #190B22 99.83%);
 }
+
 
 h1{
     position: relative;
@@ -29,13 +30,13 @@ h1{
     opacity: 0.8;
 }
 
-h2 {
+h2{
     position: relative;
     width: 625px;
     height: 24px;
     left: 756px;
     top: 76px;
-    font-family: 'Lora', serif;';
+    font-family: 'Lora', serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -46,20 +47,7 @@ h2 {
     opacity: 0.8;
 }
 
-p{
-    position: static;
-    width: 640px;
-    height: 217px;
-    left: 0px;
-    top: 132px;
-    font-family: 'Roboto', Condensed;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 170%;
-    color: #FFFFFF;
-}
-
+/*Planet CSS*/
 
 .sun {
     position: absolute;
@@ -70,6 +58,7 @@ p{
     background: #FFD029;
     box-shadow: 0px 0px 250px rgba(255, 208, 41, 0.2);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .mercury {
@@ -80,6 +69,7 @@ p{
     top: 443px;
     background: #888888;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .venus {
@@ -90,6 +80,7 @@ p{
     top: 437px;
     background: #E7CDCD;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .earth {
@@ -100,6 +91,7 @@ p{
     top: 436px;
     background: #428ED5;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .mars {
@@ -110,6 +102,7 @@ p{
     top: 443px;
     background: #EF5F5F;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .jupiter {
@@ -120,6 +113,7 @@ p{
     top: 356px;
     background: #E29468;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .saturn {
@@ -130,6 +124,7 @@ p{
     top: 378px;
     background: #C7AA72;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .saturn__ring{
@@ -142,6 +137,7 @@ p{
     transform: rotate(-30deg);
     border-radius: 50%;
     opacity: 40%;
+    cursor: pointer;
 }
 
 .uranus {
@@ -152,6 +148,7 @@ p{
     top: 417px;
     background: #C9D4F1;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .neptune {
@@ -162,6 +159,134 @@ p{
     top: 417px;
     background: #7A91A7;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Showcase css*/
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(269.84deg, #0C164D 0.11%, #190B22 99.83%);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.col{
+    border: 1px solid black;
+    width: 700px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.col1{
+   width: 700px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.innerCol1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.innerCol1 div{
+    padding: 10px;
+}
+
+.innerCol2{
+    border: 1px solid black;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.innerCol2 div{
+    padding: 10px;
+}
+
+.col4 div{
+    display: flex;
+}
+
+.col4 div p{
+    margin-right: 10px;
+}
+
+.headline-large{
+    font-family: 'Secular One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.headline-medium{
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 0.6em;
+    color: #FFD029;
+    opacity: 0.8;
+}
+
+.headline-small{
+    font-family: 'Secular One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+}
+
+.text{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #FFFFFF;
 }
 
 
