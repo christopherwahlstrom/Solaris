@@ -8,8 +8,8 @@
     <title>Solaris</title>
 </head>
 <body>
-    <h1>SOLSYSTEMET</h1>
-    <h2>SOLARIS</h2>
+    <h1 class="mainpage-headline">SOLSYSTEMET</h1>
+    <h2 class="mainpage-subtext">SOLARIS</h2>
     <main>
         
         <article onclick="on()" >
@@ -34,45 +34,45 @@
             <div id="8" class="neptune index"></div>
         </article>
 
-            <section id="planets_overlay" onclick="off()" class="overlay"> 
-                <section class="container">
-                    <section class = "col col1">
-                        <h1 class= "headline-large" id="name"></h1>
-                        <h2 class="headline-medium" id="latin-name"></h2>
-                    </section>
-
-                    <section class="col col2">
-                        <p class="text" id="desc"></p>
-                    </section>
-
-                    <section class="col col3">
-                        <section class="innerCol1">
-                            <div>
-                                <h3 class="headline-small">OMKRETS</h3>
-                                <p class="text" id="circumference"></p>
-                            </div>
-                            <div>
-                                <h3 class="headline-small">MAX TEMPERATUR</h3>
-                                <p class="text" id="temp-day"></p>
-                            </div>
-                        </section>
-                    </section>
-                    <section class="innerCol2">
-                            <div>
-                                <h3 class="headline-small">KM FRÅN SOLEN</h3>
-                                <p class="text" id="distance"></p>
-                            </div>
-                            <div>
-                                <h3 class="headline-small">MIN TEMPERATUR</h3>
-                                <p class="text" id="temp-night"></p>
-                            </div>
-                    </section>
-                    <section class="col col4">
-                        <h3 class="headline-small">MÅNAR</h3>
-                        <p class="text" id="moons"></p>      
-                    </section>
+        
+            <section id="planets_overlay" onclick="off()"class="outerWrapper">
+                <div class="container">
+    
+                <section class = "col col1">
+                    <h1 class= "headline-large" id="name">PLANET</h1>
+                    <h2 class="headline-medium" id="latin-name">LATIN</h2>
                 </section>
+    
+                <section class="col col2">
+                    <p class="text" id="desc"></p>
+                    <hr>
+                </section>
+    
+                
+                <section class="col col3">
+                        <div>
+                            <h3 class="headline-small">OMKRETS</h3>
+                            <p class="text" id="circumference"></p>
+                        </div>
+                        <div>
+                            <h3 class="headline-small">MAX TEMPERATUR</h3>
+                            <p class="text" id="temp-day"></p>
+                        </div>
+                        <div>
+                            <h3 class="headline-small">KM FRÅN SOLEN</h3>
+                            <p class="text" id="distance"></p>
+                        </div>
+                        <div>
+                            <h3 class="headline-small">MIN TEMPERATUR</h3>
+                            <p class="text" id="temp-night"></p>
+                        </div>
             </section>
+    
+                <section class="col col4">
+                    <h3 class="headline-small">MÅNAR</h3>
+                    <p class="text" id="moons"></p>      
+                </section>
+            
     </main>
     <script src="main.js"></script>
 </body>
